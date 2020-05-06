@@ -15,6 +15,7 @@ int is_palindrome(listint_t **head)
 	{
 		size++;
 		stack[size - 1] = (*head)->n;
+		head = &(*head)->next;
 	}
 
 	for (i = 0; i < size / 2; i++)
