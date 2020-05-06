@@ -12,7 +12,6 @@ int is_palindrome(listint_t **head)
 	int i;
 	int size = 0;
 	int nums[2048];
-	int middle = size / 2;
 
 	if (*head == NULL)
 		return (1);
@@ -23,7 +22,7 @@ int is_palindrome(listint_t **head)
 		nums[size - 1] = (*head)->n;
 		head = &(*head)->next;
 	}
-
+	middle = size / 2;
 	for (i = 0; i < middle; i++)
 	{
 		if (nums[i] != nums[size - i - 1])
