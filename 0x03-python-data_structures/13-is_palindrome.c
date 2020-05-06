@@ -4,7 +4,7 @@
 int is_palindrome(listint_t **head)
 {
 	int size;
-	int stack[2047];
+	int stack[2045];
 	int i;
 
 	size = 0;
