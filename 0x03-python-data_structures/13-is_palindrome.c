@@ -4,7 +4,7 @@
 int is_palindrome(listint_t **head)
 {
 	int size;
-	int options[2048];
+	int stack[3000];
 	int i;
 
 	size = 0;
@@ -14,13 +14,13 @@ int is_palindrome(listint_t **head)
 	while (*head != NULL)
 	{
 		size++;
-		options[size - 1] = (*head)->n;
+		stack[size - 1] = (*head)->n;
 		head = &(*head)->next;
 	}
 
 	for (i = 0; i < size / 2; i++)
 	{
-		if (options[i] != options[size - i - 1])
+		if (stack[i] != stack[size - i - 1])
 			return (0);
 	}
 
