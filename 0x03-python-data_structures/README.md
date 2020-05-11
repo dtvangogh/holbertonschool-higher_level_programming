@@ -1,7 +1,7 @@
 # 0x03. Python - Data Structures: Lists, Tuples
 ## Description
  This project is part of Foundations - Higher-level programming ― Python:
-##Project tasks :wrench:
+## Project tasks :wrench:
 ---
 ### [0. Print a list of integers mandatory](./0-print_list_integer.py) 
 * Write a function that prints all integers of a list.
