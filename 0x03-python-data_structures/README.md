@@ -2,7 +2,7 @@
 ## Description
  This project is part of Foundations - Higher-level programming ― Python:
 ## Project tasks :wrench:
----
+
 ### [0. Print a list of integers mandatory](./0-print_list_integer.py) 
 * Write a function that prints all integers of a list.
 ### [1. Secure access to an element in a list mandatory](./1-element_at.py) 
