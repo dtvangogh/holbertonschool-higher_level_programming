@@ -13,3 +13,5 @@
 * Write a function that prints all integers of a list, in reverse order.
 ### [4. Replace in a copy mandatory](./4-new_in_list.py) 
 * Write a function that replaces an element in a list at a specific position without modifying the original list (like in C).
+---
+DT Van gave birth to this project - [dtvangogh](https://github.com/dtvangogh)
