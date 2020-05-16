@@ -2,8 +2,7 @@
 ## Description
  This project is part of Foundations - Higher-level programming ― Python:
 ## Project tasks :wrench:
-
-### [1](./0-print_list_integer.py) 
+### [0. Print a list of integers ](./0-print_list_integer.py) 
 * Write a function that prints all integers of a list.
 ### [1. Secure access to an element in a list ](./1-element_at.py) 
 * Write a function that retrieves an element from a list like in C.
