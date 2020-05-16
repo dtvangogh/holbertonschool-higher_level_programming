@@ -30,5 +30,8 @@
 * Complete the source code in order to switch value of a and b
 ### [13. Linked list palindrome ](./100-print_python_list_info.c) 
 * Technical interview preparation:
+### [14. CPython #0: Python lists ](./13-is_palindrome.c, lists.h) 
+* CPython is the reference implementation of the Python programming language. Written in C, CPython is the default and most widely used implementation of the language.
+Since we now know a bit of C, we can look at what is happening under the hood of Python. Let’s have fun with Python and C, and let’s look at what makes Python so easy to use.
 ---
 Created by [DT Van](https://github.com/dtvangogh)
