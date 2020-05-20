@@ -68,9 +68,8 @@ class Square:
             if len(value) != 2:
                 raise TypeError(s)
             else:
-                for i in range(len(value)):
-                    if value[i] < 0:
+                if value[0] < 0 or value[1] < 0:
                         raise TypeError(s)
-            self.__position = value
         else:
             raise TypeError(s)
+        self.position = value
