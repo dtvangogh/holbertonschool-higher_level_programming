@@ -7,5 +7,5 @@
 class Square:
     """ creates a private size variable """
     def __init__(self, size):
-        """ initialize variable """
+        """ set variable """
         self.__size = size
