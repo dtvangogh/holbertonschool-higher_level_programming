@@ -70,6 +70,6 @@ class Square:
             else:
                 if value[0] < 0 or value[1] < 0:
                         raise TypeError(s)
+            self.__position = value
         else:
             raise TypeError(s)
-        self.position = value
