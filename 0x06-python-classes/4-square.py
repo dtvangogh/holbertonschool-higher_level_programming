@@ -1,5 +1,6 @@
-
 #!/usr/bin/python3
+
+
 """square class"""
 
 
@@ -18,7 +19,6 @@ class Square:
         """returns area of square"""
 
         return (self.__size ** 2)
-
 
     @property
     def size(self):
