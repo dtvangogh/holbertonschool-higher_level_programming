@@ -64,14 +64,12 @@ class Square:
     def position(self, value):
         """ sets the position and error checking """
         s = "position must be a tuple of 2 positive integers"
-        if type(value) is tuple:
-            if len(value) != 2:
-                raise TypeError(s)
-            elif value[0] is not int or value[1] is not int:
-                raise TypeError(s)
-            else:
-                if value[0] < 0 or value[1] < 0:
-                        raise TypeError(s)
-            self.__position = value
-        else:
+        if type(value) is not tuple:
             raise TypeError(s)
+        if len(value) != 2:
+                raise TypeError(s)
+        if type(value[0]) is not int or type(value[1]) is not int:
+                raise TypeError(s)
+        if value[0] < 0 or value[1] < 0:
+                raise TypeError(s)
+        self.__position = value
