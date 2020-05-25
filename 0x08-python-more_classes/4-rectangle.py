@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 """
 Rectangle
 """
@@ -62,6 +61,7 @@ class Rectangle:
             if height is not self.__height - 1:
                 rectangle += "\n"
         return rectangle
+
     def __repr__(self):
         """ string representation of an instance of a square """
         width = str(self.__width)
