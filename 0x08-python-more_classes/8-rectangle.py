@@ -78,13 +78,13 @@ class Rectangle:
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
 
-    def bigger_or_equal(rect_1, rect_2):
+    def bigger_or_equal(r1, r2):
         """ returns biggest rectangle """
-        if type(rect_1) is not Rectangle:
+        if type(r1) is not Rectangle:
             raise TypeError("rect_1 must be an instance of Rectangle")
-        if type(rect_2) is not Rectangle:
+        if type(r2) is not Rectangle:
             raise TypeError("rect_2 must be an instance of Rectangle")
-        if rect_1.area() >= rect_2.area():
-            return rect_1
+        if r1.area() >= r2.area():
+            return r1
         else:
-            return rect_2
+            return r2
