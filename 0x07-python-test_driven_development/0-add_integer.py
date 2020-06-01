@@ -1,10 +1,10 @@
 #!/usr/bin/python3
+
 """
  Return sum of a and b
  Converts float to integer
  Errors included
 """
-
 
 
 def add_integer(a, b=98):
