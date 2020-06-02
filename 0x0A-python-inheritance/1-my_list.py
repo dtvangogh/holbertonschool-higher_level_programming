@@ -7,6 +7,6 @@ class MyList(list):
 
     def print_sorted(self):
         """ print sorted list"""
-        newlist = self
+        newlist = list(self)
         newlist.sort()
         print(newlist)
