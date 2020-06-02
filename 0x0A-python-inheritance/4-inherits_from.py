@@ -7,4 +7,4 @@ inherited from specified class
 
 def inherits_from(obj, a_class):
     """ Return True if so and False Otherwise """
-    return isinstance(obj, a_class)
+    return isinstance(obj, a_class) and type(obj) != a_class
