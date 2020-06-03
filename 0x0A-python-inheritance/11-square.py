@@ -1,0 +1,57 @@
+#!/usr/bin/python3
+"""
+geometry
+"""
+
+
+class BaseGeometry:
+    """ Does calculations """
+    def area(self):
+        """ area """
+        raise Exception("area() is not implemented")
+
+    def integer_validator(self, name, value):
+        """ checks integer """
+        if type(value) is not int:
+            raise TypeError("{} must be an integer".format(name))
+        if value <= 0:
+            raise ValueError("{} must be greater than 0".format(name))
+
+
+"""
+Rectangle Class
+"""
+
+
+class Rectangle(BaseGeometry):
+    """ Rectangle Class """
+    def __init__(self, width, height):
+        """ width and height """
+        self.__width = width
+        self.__height = height
+        BaseGeometry.integer_validator(self, "width", self.__width)
+        BaseGeometry.integer_validator(self, "height", self.__height)
+
+    def area(self):
+        return self.__width * self.__height
+
+    def __str__(self):
+        """ string representation """
+        return "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
+
+
+"""
+A Square clas
+"""
+
+
+class Square(Rectangle):
+    """ Square  """
+    def __init__(self, size):
+        """ size"""
+        self.__size = size
+        super().__init__(self.__size, self.__size)
+
+    def __str__(self):
+        return "[Square] " + str(self.__size) + "/" + str(self.__size)
+
