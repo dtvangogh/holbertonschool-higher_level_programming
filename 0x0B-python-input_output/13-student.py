@@ -29,7 +29,6 @@ class Student:
                 string_dict[string] = self.__dict__[string]
         return string_dict
 
-
     def reload_from_json(self, json):
         """ reloads from json"""
         for item in json:
