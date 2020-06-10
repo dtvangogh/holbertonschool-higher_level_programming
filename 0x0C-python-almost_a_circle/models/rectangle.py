@@ -32,6 +32,23 @@ class Rectangle(Base):
 
         return self.__width
 
+    def __str__(self):
+        """Str problem"""
+
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+            self.id, self.x, self.y, self.width, self.height)
+
+    def display(self):
+        """Prints rectangle with #s
+        """
+        for y in range(self.__y):
+            print()
+        for i in range(self.__height):
+            for x in range(self.__x):
+                print(' ', end="")
+            for j in range(self.__width):
+                print('#', end="")
+            print()
     @width.setter
     def width(self, value):
         """Sets the width
@@ -98,3 +115,9 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+
+    def area(self):
+        """returns area of rectangle
+        """
+
+        return self.__width * self.__height
