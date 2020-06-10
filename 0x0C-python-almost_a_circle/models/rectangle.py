@@ -49,6 +49,7 @@ class Rectangle(Base):
             for j in range(self.__width):
                 print('#', end="")
             print()
+
     @width.setter
     def width(self, value):
         """Sets the width
