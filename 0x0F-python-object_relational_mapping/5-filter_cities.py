@@ -27,6 +27,6 @@ if __name__ == '__main__':
     rows = cursor.fetchall()
     for row in rows:
         cityArray.append(row[1])
-        print(', '.join(cityArray))
+    print(', '.join(cityArray))
     cursor.close()
     db.close()
