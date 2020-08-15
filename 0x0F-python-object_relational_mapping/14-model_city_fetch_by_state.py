@@ -21,8 +21,8 @@ if __name__ == "__main__":
 
     session = Session(engine)
     citiesAndStates = session.query(City, State)\
-                .filter(City.state_id == State.id)\
-                .order_by(City.id.asc()).all()
+        .filter(City.state_id == State.id)\
+        .order_by(City.id.asc()).all()
 
     for cities, states in citiesAndStates:
         print("{}: ({}) {}".format(states.name, cities.id, cities.name))
