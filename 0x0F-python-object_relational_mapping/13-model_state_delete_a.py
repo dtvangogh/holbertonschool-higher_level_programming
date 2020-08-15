@@ -23,8 +23,8 @@ if __name__ == "__main__":
 
     states = session.query(State).order_by(State.id).all()
     for item in states:
-    	if 'a' in item.name:
-	    	session.delete(item)
+        if 'a' in item.name:
+            session.delete(item)
 
     session.commit()
     session.close()
