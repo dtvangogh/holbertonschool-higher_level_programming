@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Start link class to table in database 
+"""Start link class to table in database
 """
 import sys
 from sys import argv
@@ -18,6 +18,6 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
 
     session = Session(engine)
-    subject = session.query(State).order_by(State.id.asc()).all() 
+    subject = session.query(State).order_by(State.id.asc()).all()
     for state in subject:
 	    print("{}: {}".format(state.id, state.name))

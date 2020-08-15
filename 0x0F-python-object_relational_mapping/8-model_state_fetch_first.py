@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Start link class to table in database 
+"""Start link class to table in database
 """
 import sys
 from sys import argv
@@ -18,9 +18,9 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
 
     session = Session(engine)
-    whatWeLookingAt = session.query(State).order_by(State.id.asc()).first() 
+    whatWeLookingAt = session.query(State).order_by(State.id.asc()).first()
     if whatWeLookingAt is None:
-    	print("Nothing")
+        print("Nothing")
     else:
         print("{}: {}".format(whatWeLookingAt.id, whatWeLookingAt.name))
     session.close()

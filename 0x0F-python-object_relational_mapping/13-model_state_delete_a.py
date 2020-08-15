@@ -25,6 +25,6 @@ if __name__ == "__main__":
     for item in states:
     	if 'a' in item.name:
 	    	session.delete(item)
-		
+
     session.commit()
     session.close()

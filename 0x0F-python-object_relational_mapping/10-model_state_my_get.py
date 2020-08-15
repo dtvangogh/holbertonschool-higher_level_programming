@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Start link class to table in database 
+"""Start link class to table in database
 """
 import sys
 from sys import argv
@@ -19,10 +19,10 @@ if __name__ == "__main__":
 
     session = Session(engine)
     """why does .first work but .all not work? """
-    whatWeLookingAt = session.query(State).filter(State.name == arg).first() 
+    whatWeLookingAt = session.query(State).filter(State.name == arg).first()
     if whatWeLookingAt is not None:
         print("{}".format(whatWeLookingAt.id))
     else:
         print("Not found")
-            
-        
+
+
