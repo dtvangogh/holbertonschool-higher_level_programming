@@ -1,2 +1,3 @@
-#!/usr/bin/python3
-no prototype
+#!/bin/bash
+# sends a DELETE req to URL and displays the response
+curl -sX DELETE "$1"
