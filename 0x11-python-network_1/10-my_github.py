@@ -6,11 +6,13 @@ Takes Github credentials and displays the user id #
 import requests
 from sys import argv
 
+
 if __name__ == '__main__':
     username = argv[1]
     password = argv[2]
 
-    request = requests.get('https://api.github.com/user', auth=(username, password))
+    request = requests.get('https://api.github.com/user',
+                           auth=(username, password))
     if request.status_code != 200:
         print("None")
     else:
