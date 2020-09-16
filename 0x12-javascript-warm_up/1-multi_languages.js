@@ -1,2 +1,3 @@
-#!/usr/bin/python3
-no prototype
+#!/usr/bin/node
+
+console.log('C is fun\n' + 'Python is cool\n' + 'Javascript is amazing');

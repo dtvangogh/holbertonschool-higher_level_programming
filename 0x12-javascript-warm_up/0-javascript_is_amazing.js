@@ -1,2 +1,4 @@
-#!/usr/bin/python3
-no prototype
+#!/usr/bin/node
+
+const myVar = 'Javascript is amazing';
+console.log(myVar);
