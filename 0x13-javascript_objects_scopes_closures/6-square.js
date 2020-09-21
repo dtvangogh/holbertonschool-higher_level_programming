@@ -1,8 +1,8 @@
 #!/usr/bin/node
 
-const original_square = require('./5-square');
+const originalSquare = require('./5-square');
 
-module.exports = class Square extends original_square {
+module.exports = class Square extends originalSquare {
   charPrint (c) {
     for (let i = 0; i < this.height; i++) {
       if (c === undefined) {
