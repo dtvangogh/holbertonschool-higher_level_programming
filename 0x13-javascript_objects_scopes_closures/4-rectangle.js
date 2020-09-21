@@ -16,9 +16,9 @@ module.exports =
       }
 
       rotate () {
-        const original_height = this.height;
+        const originalHeight = this.height;
         this.height = this.width;
-        this.width = original_height;
+        this.width = originalHeight;
       }
 
       double () {
