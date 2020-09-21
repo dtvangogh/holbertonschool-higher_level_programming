@@ -1,4 +1,3 @@
-
 #!/usr/bin/node
 const Rectangle = require('./4-rectangle');
 
@@ -13,4 +12,3 @@ r1.print();
 console.log('Rotate:');
 r1.rotate();
 r1.print();
-
