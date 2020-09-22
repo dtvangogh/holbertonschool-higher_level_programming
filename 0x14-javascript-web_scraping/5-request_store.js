@@ -1,9 +1,9 @@
 #!/usr/bin/node
 
-let request = require('request');
-let fs = require('fs');
-let createdFile = process.argv[3];
-let url = process.argv[2];
+const request = require('request');
+const fs = require('fs');
+const createdFile = process.argv[3];
+const url = process.argv[2];
 
 request(url, function (err, response, body) {
   if (err) throw err;
